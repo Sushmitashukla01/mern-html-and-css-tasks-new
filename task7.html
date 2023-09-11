@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bars</title>
+    <style>
+        /* Vertical Navigation Bar */
+        
+        .vertical-nav {
+            background-color: lightblue;
+            width: 150px;
+            padding: 10px;
+            float: left;
+        }
+        
+        .vertical-nav a {
+            display: block;
+            text-decoration: none;
+            color: darkblue;
+            padding: 10px;
+        }
+        
+        .vertical-nav a:hover {
+            background-color: rgb(205, 205, 56);
+            color: white;
+        }
+        /* Horizontal Navigation Bar */
+        
+        .horizontal-nav {
+            background-color: grey;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+            margin-left: 120px;
+        }
+        
+        .horizontal-nav a {
+            text-decoration: none;
+            color: blue;
+            padding: 10px;
+        }
+        
+        .horizontal-nav a:hover {
+            background-color: darkgrey;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="vertical-nav">
+        <a href="#">Home</a>
+        <a href="#">Java</a>
+        <a href="#">CSS</a>
+        <a href="#">HTML</a>
+        <a href="#">Bootstrap</a>
+    </div>
+
+    <div class="horizontal-nav">
+        <a href="#">Home</a>
+        <a href="#">Java</a>
+        <a href="#">CSS</a>
+        <a href="#">HTML</a>
+        <a href="#">Bootstrap</a>
+    </div>
+</body>
+
+</html>

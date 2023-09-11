@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabular Registration Form</title>
+    <style>
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            border: 2px solid black;
+            /* Add a black border to the table */
+        }
+        
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid black;
+            /* Add a black border to the table cells */
+        }
+        
+        .checkbox-label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        /* Style for "Registration Form" text */
+        
+        .form-title {
+            color: blue;
+        }
+        /* Style for the checkbox label */
+        
+        .checkbox-label a {
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th colspan="2"><span class="form-title">Registration Form</span></th>
+        </tr>
+        <tr>
+            <td>Full Name:</td>
+            <td><input type="text" id="full_name" name="full_name"></td>
+        </tr>
+        <tr>
+            <td>Username:</td>
+            <td><input type="text" id="username" name="username"></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="password" id="password" name="password"></td>
+        </tr>
+        <tr>
+            <td>Re-enter Password:</td>
+            <td><input type="password" id="repassword" name="repassword"></td>
+        </tr>
+        <tr>
+            <td>Address:</td>
+            <td><textarea id="address" name="address" rows="4"></textarea></td>
+        </tr>
+        <tr>
+            <td>State:</td>
+            <td><input type="text" id="state" name="state"></td>
+        </tr>
+        <tr>
+            <td>Country:</td>
+            <td>
+                <select id="country" name="country">
+                    <option value="" disabled selected>Choose your country</option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="UK">UK</option>
+                    <!-- Add more countries as needed -->
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Languages Known:</td>
+            <td>
+                <label class="checkbox-label"><input type="checkbox" name="languages_known[]" value="English"> English</label>
+                <label class="checkbox-label"><input type="checkbox" name="languages_known[]" value="Kannada"> Kannada</label>
+                <label class="checkbox-label"><input type="checkbox" name="languages_known[]" value="Hindi"> Hindi</label>
+                <label class="checkbox-label"><input type="checkbox" name="languages_known[]" value="Telugu"> Telugu</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td>
+                <label class="checkbox-label"><input type="radio" name="gender" value="Male"> Male</label>
+                <label class="checkbox-label"><input type="radio" name="gender" value="Female"> Female</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <label class="checkbox-label">
+                    <input type="checkbox" name="declaration">
+                    I hereby declare that all the given details are true.
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">login to
+                <a href="https://www.ethnus.com" target="_blank"> Ethnus </a>website
+            </td>
+        </tr>
+    </table>
+    <div style="text-align: center;">
+        <button type="submit">Register</button>
+    </div>
+</body>
+
+</html>

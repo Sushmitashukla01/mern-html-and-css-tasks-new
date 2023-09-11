@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .box {
+            border: 2px solid black;
+            padding: 10px;
+            width: 400px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        
+        .box a {
+            text-decoration: none;
+            margin: 0 5px;
+        }
+    </style>
+    <title>Clickable Links</title>
+</head>
+
+<body>
+    <div class="box">
+        Click any one of the following links:<br>
+        <a href="javascript:void(0);" onclick="window.open('https://example.com', '_blank')">opens in new</a> |
+        <a href="https://example.com">opens in self</a> |
+        <a href="javascript:void(0);" onclick="window.open('https://example.com', '_parent')">opens in parent</a> |
+        <a href="javascript:void(0);" onclick="window.open('https://example.com', '_blank')">opens in body</a> |
+        <a href="mailto:example@example.com">send email</a>
+    </div>
+</body>
+
+</html>
